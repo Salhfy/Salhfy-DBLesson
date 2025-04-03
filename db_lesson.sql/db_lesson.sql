@@ -1,11 +1,11 @@
-Q1    create table departments(
+Q1.   create table departments(
               -> department_id INT(10) AUTO_INCREMENT PRIMARY KEY,
               -> name VARCHAR(20) NOT NULL,
               ->created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
               ->updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
               -> );
 
-Q2    alter table people add department_id INT unsigned after email;
+Q2.   alter table people add department_id INT unsigned after email;
 
 Q3.  mysql> insert into departments (name)
     -> values
